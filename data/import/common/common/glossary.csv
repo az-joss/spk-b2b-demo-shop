@@ -83,6 +83,8 @@ customer.password,Passwort,de_DE
 customer.password,Password,en_US
 password.confirm,Passwort bestätigen,de_DE
 password.confirm,Confirm passwort,en_US
+page.checkout.order_details.order_name.label,Name the order,en_US
+page.checkout.order_details.order_name.label,Bestellung benennen,de_DE
 page.checkout.address.heading,1. Adressangaben,de_DE
 page.checkout.address.heading,1. Address Data,en_US
 page.checkout.address.name,Name,de_DE
@@ -817,6 +819,8 @@ checkout.step.customer.title,Login,en_US
 checkout.step.customer.title,Anmelden,de_DE
 checkout.step.address.title,Address,en_US
 checkout.step.address.title,Adresse,de_DE
+checkout.step.address,Next,en_US
+checkout.step.address,Weiter,de_DE
 checkout.step.shipment.title,Shipping,en_US
 checkout.step.shipment.title,Versand,de_DE
 checkout.step.payment.title,Payment,en_US
@@ -861,6 +865,8 @@ checkout.step.place.order,Submit your order,en_US
 checkout.step.place.order,Jetzt kaufen,de_DE
 checkout.step.payment.must_be_older_than_18_years,You must be at least 18 years old.,en_US
 checkout.step.payment.must_be_older_than_18_years,Sie müssen mindestens 18 Jahre alt sein.,de_DE
+checkout.step.order_details.title,Order details,en_US
+checkout.step.order_details.title,Bestelldetails,de_DE
 checkout.step.success.title,Thank you!,en_US
 checkout.step.success.title,Vielen Dank!,de_DE
 checkout.step.success.text,Your order has been placed successfully. You will get the order confirmation email in a few minutes.,en_US
@@ -2207,6 +2213,8 @@ validation.email,This value is not a valid email address.,en_US
 validation.email,Dieser Wert ist keine gültige E-Mail-Adresse.,de_DE
 validation.choice,This value is not valid,en_US
 validation.choice,Dieser Wert ist nicht gültig,de_DE
+validation.lower_case_letters_and_digits_only,Only lowercase letters and numbers are allowed.,en_US
+validation.lower_case_letters_and_digits_only,Erlaubt sind nur Kleinbuchstaben und Ziffern.,de_DE
 shopping_list.cart.items_add.failed,Items could not be added to the List,en_US
 shopping_list.cart.items_add.failed,Artikel konnten der Liste nicht hinzugefügt werden,de_DE
 shopping_list.cart.items_add.success,Items were added to the List,en_US
