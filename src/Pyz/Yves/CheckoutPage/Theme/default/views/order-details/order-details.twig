@@ -1,0 +1,48 @@
+{% extends template('page-layout-checkout', 'CheckoutPage') %}
+
+{% define data = {
+    forms: {
+        orderDetails: _view.orderDetailsForm,
+    },
+    backUrl: _view.previousStepUrl,
+    title: 'checkout.step.order_details.title' | trans,
+    stepNumder: 1,
+} %}
+
+{% block header %}
+    {% set cart = data.forms.orderDetails.vars.data %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+    {% set jsOrderNameClass = 'js-order-name' %}
+    {% set formSubmitClassName = jsOrderNameClass ~ '__form-submit' %}
+
+    {% embed molecule('form') with {
+        class: 'box',
+        data: {
+            form: data.forms.orderDetails,
+            backUrl: data.backUrl,
+            submit: {
+                enable: true,
+                text: 'checkout.step.address' | trans,
+                class: 'button button--big spacing-top spacing-top--big ' ~ formSubmitClassName,
+            },
+        }
+    } only %}
+
+        {% block fields %}
+            <div class="col col--sm-12 col--lg-6">
+                {{ form_row(data.form.orderName, {}) }}
+            </div>
+        {% endblock %}
+
+        {% block actions %}
+            <div class="grid grid--middle grid--justify grid--expand">
+                <div class="spacing-top col col--sm-12 text-left">
+                    {{ parent() }}
+                </div>
+            </div>
+        {% endblock %}
+    {% endembed %}
+{% endblock %}
