@@ -81,6 +81,10 @@
                         {{ 'customer.order.reference' | trans }}
                         {{ _self.sortingIcon('orderReference', data.orderSearchForm, config.name ~ '__sorting-icon') }}
                     </th>
+                    <th {{ _self.sortingAttributes('orderName', data.orderSearchForm, data.jsPrefix, config.name ~ '__sorting-title') }}>
+                        {{ 'customer.order.order_name' | trans }}
+                        {{ _self.sortingIcon('orderName', data.orderSearchForm, config.name ~ '__sorting-icon') }}
+                    </th>
                     <th {{ _self.sortingAttributes('date', data.orderSearchForm, data.jsPrefix, config.name ~ '__sorting-title') }}>
                         {{ 'customer.order.date' | trans }}
                         {{ _self.sortingIcon('date', data.orderSearchForm, config.name ~ '__sorting-icon') }}
@@ -110,6 +114,9 @@
                     <tr class="{{ searchItemsActiveRowClass }}">
                         <td class="transform-cell spacing-top spacing-top--inner spacing-top--big" data-content="{{ 'customer.order.order_id' | trans }}">
                             {{- order.orderReference -}}
+                        </td>
+                        <td class="transform-cell spacing-top spacing-top--inner spacing-top--big" data-content="{{ 'customer.order.order_name' | trans }}">
+                            {{- order.orderName | default('-') -}}
                         </td>
                         <td class="transform-cell" data-content="{{ 'customer.order.date' | trans }}">
                             {{- date(order.createdAt) | formatDateTime -}}

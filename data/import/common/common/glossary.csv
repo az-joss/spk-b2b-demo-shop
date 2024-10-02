@@ -3419,6 +3419,8 @@ customer.order.number_of_items,No. of Items,en_US
 customer.order.number_of_items,Anzahl der Artikel,de_DE
 customer.order.reference,Reference,en_US
 customer.order.reference,Referenz,de_DE
+customer.order.order_name,Order name,en_US
+customer.order.order_name,Bestellung,de_DE
 customer.order.email,Email,en_US
 customer.order.email,E-Mail-Adresse,de_DE
 customer.order.company_user,Company User,en_US
