@@ -36,6 +36,19 @@ class CustomerPageConfig extends SprykerCustomerPageConfig
     protected const IS_ORDER_HISTORY_SEARCH_ENABLED = true;
 
     /**
+     * @uses \Pyz\Shared\Sales\SalesConfig::ORDER_SEARCH_TYPES
+     *
+     * @var array<int, string>
+     */
+    protected const ORDER_SEARCH_TYPES = [
+        'all',
+        'orderReference',
+        'orderName',
+        'itemName',
+        'itemSku',
+    ];
+
+    /**
      * {@inheritDoc}
      *
      * @return bool
