@@ -7,7 +7,7 @@ use Spryker\Zed\Sales\Business\SalesBusinessFactory as SprykerSalesBusinessFacto
 
 class SalesBusinessFactory extends SprykerSalesBusinessFactory
 {
-    public function getOrderDetailsExpander(): OrderDetailsExpander
+    public function createOrderDetailsExpander(): OrderDetailsExpander
     {
         return new OrderDetailsExpander();
     }

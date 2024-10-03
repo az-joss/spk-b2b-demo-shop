@@ -18,7 +18,7 @@ class SalesFacade extends SprykerSalesFacade implements SalesFacadeInterface
         QuoteTransfer $quoteTransfer,
     ): SpySalesOrderEntityTransfer {
         return $this->getFactory()
-            ->getOrderDetailsExpander()
+            ->createOrderDetailsExpander()
             ->expandSalesOrderEntityTransferWithOrderDetails($salesOrderEntityTransfer, $quoteTransfer);
     }
 }
